@@ -18,19 +18,20 @@
             <span class="auto-style1">Postal Calculator</span><br />
             <br />
             Width:
-            <asp:TextBox ID="TextBox1" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
+            <asp:TextBox ID="widthTextBox" runat="server" OnTextChanged="widthTextBox_TextChanged" AutoPostBack="True"></asp:TextBox>
             <br />
-            Heigth: <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+            Heigth:
+            <asp:TextBox ID="heightTextBox" runat="server" OnTextChanged="heightTextBox_TextChanged" AutoPostBack="True"></asp:TextBox>
             <br />
             Length:
-            <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+            <asp:TextBox ID="lengthTextBox" runat="server" OnTextChanged="lengthTextBox_TextChanged" AutoPostBack="True"></asp:TextBox>
             <br />
             <br />
-            <asp:RadioButton ID="groundRadioButton" runat="server" Text="Ground" />
+            <asp:RadioButton ID="groundRadioButton" runat="server" GroupName="postal" OnCheckedChanged="groundRadioButton_CheckedChanged" Text="Ground" AutoPostBack="True" />
             <br />
-            <asp:RadioButton ID="airRadioButton" runat="server" Text="Air" />
+            <asp:RadioButton ID="airRadioButton" runat="server" GroupName="postal" OnCheckedChanged="airRadioButton_CheckedChanged" Text="Air" AutoPostBack="True" />
             <br />
-            <asp:RadioButton ID="nextDayRadioButton" runat="server" Text="Next Day" />
+            <asp:RadioButton ID="nextDayRadioButton" runat="server" GroupName="postal" OnCheckedChanged="nextDayRadioButton_CheckedChanged" Text="Next Day" AutoPostBack="True" />
             <br />
             <br />
             <br />
